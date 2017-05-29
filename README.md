@@ -1,2 +1,39 @@
-# rust
-Rust Programming Language 
+# Rust
+Rust Programming Language
+
+	- Variable Bindings
+	- Functions
+	- Primitive Types
+	- Comments
+	- if
+	- Loops
+	- Vectors
+	- Ownership
+	- References and Borrowing
+	- Lifetimes 
+	- Mutability 
+	- Structs 
+	- Enums
+	- Match
+	- Patterns
+	- Method Syntax 
+	- Strings
+	- Generics
+	- Traits
+	- Drop
+	- iflet
+	- Trait Objects
+	- Closures
+	- Universal Function Call Sytnax 
+	- Crates and Modules 
+	- `const` and `static` 
+	- Attributes
+	- `type` aliases
+	- Casting Between Types
+	- Associated Types
+	- Unsized Types
+	- Operators and Overloading
+	- Deref coercions 
+	- Macros 
+	- Raw Pointers 
+	- `unsafe`  
