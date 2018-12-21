@@ -61,6 +61,19 @@
              println!("{} + {} is equal to {}", i1, i2, add(i1, i2)); 
           }
       #+END_SRC
+    + Lets say you mismatched i32 with i64, rust will catch it! You could do typecasting by 
+      #+BEGIN_SRC rust
+        fn add(c:i32, d:i64) -> i32 {
+            return a + (b as i32); 
+        }
+
+        fn main() {
+          let i3 = 3; 
+          let i4 = 4; 
+          println!("{} + {} = {}", i3, i4, add(i3, i4)); 
+        }
+      
+      #+END_SRC
 *** Slices
 *** Tuples
 *** Functions
