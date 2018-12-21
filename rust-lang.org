@@ -41,7 +41,7 @@
       #+END_SRC
     + Rust has both single and double point precision floating point numbers 
     + They can be written with a decimal place or in scientific notation
-*** Arrays (Homongeneous and Heterogeneous containers)
+*** Arrays (Homongeneous and Heterogeneous containers), Tuples, Slices
     + Arrays are homogeneous. 
     + Tuples are heterogeneous.
     + Arrays are accessed with brackets.
@@ -50,7 +50,9 @@
           let array: [18; 3] = [1, 4, 7]; 
           let tuple: (i32, char) = (21, 'x')
           println!("{}, {}", array[1], tuple.1);  // this prints 4, x
-          
+      #+END_SRC
+*** Functions
+    #+BEGIN_SRC rust
           fn add(a:i32, b:i32) -> i32 {
               return a + b;
           } 
@@ -72,10 +74,6 @@
           let i4 = 4; 
           println!("{} + {} = {}", i3, i4, add(i3, i4)); 
         }
-      
-      #+END_SRC
-*** Slices
-*** Tuples
-*** Functions
-
+    #+END_SRC
+*** Namespaces and Imports (use)  
 
