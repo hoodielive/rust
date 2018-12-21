@@ -34,7 +34,33 @@
           let m: usize = 1; 
       #+END_SRC
 *** Floating-Point Integers
-*** Arrays
+    + Rust has support for floating points as well 
+      #+BEGIN_SRC rust
+          let single: f32 = 1.1225 * 10.0; 
+          let double: f64 = 1.2e-15; 
+      #+END_SRC
+    + Rust has both single and double point precision floating point numbers 
+    + They can be written with a decimal place or in scientific notation
+*** Arrays (Homongeneous and Heterogeneous containers)
+    + Arrays are homogeneous. 
+    + Tuples are heterogeneous.
+    + Arrays are accessed with brackets.
+    + Tuples are accessed with dot syntax. 
+      #+BEGIN_SRC rust
+          let array: [18; 3] = [1, 4, 7]; 
+          let tuple: (i32, char) = (21, 'x')
+          println!("{}, {}", array[1], tuple.1);  // this prints 4, x
+          
+          fn add(a:i32, b:i32) -> i32 {
+              return a + b;
+          } 
+
+          fn main() {
+             let i1 = 1; 
+             let i2 = 2; 
+             println!("{} + {} is equal to {}", i1, i2, add(i1, i2)); 
+          }
+      #+END_SRC
 *** Slices
 *** Tuples
 *** Functions
