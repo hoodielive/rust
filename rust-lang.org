@@ -1,21 +1,21 @@
 #+TITLE: Rust Notes 
 
 * Data Types in Rust 
-** Booleans
-   + Booleans are true or false 
-     #+BEGIN_SRC rust
-        let x = true; 
-        let x2: bool = true; 
-        let y = false; 
-        let y2 =  x && true; 
-        println!("y is {}", y); 
-     #+END_SRC
-** Characters
-** Integers 
-** Floating-Point Integers
-** Arrays
-** Slices
-** Tuples
-** Functions
+*** Booleans
+    + Booleans are true or false 
+      #+BEGIN_SRC rust
+         let x = true; 
+         let x2: bool = true; 
+         let y = false; 
+         let y2 =  x && true; 
+         println!("y is {}", y); 
+      #+END_SRC
+*** Characters
+*** Integers 
+*** Floating-Point Integers
+*** Arrays
+*** Slices
+*** Tuples
+*** Functions
 
 
