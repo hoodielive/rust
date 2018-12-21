@@ -17,9 +17,22 @@
           let c: char = "A"; 
           let d: char = "♥"; 
       #+END_SRC
-    
-    #+END_SRC
 *** Integers 
+    + Rust has several integer types:
+     #+BEGIN_SRC rust
+         let e: i16 = -356; 
+         let f: u16 = 1029; 
+         let g: i32 = -31337;
+         let h: u32 = 42949672; 
+         let j: i64 = -4294967295; 
+         let k: u64 = 18446744973709551615;
+     #+END_SRC
+    + There are also architecture sized types
+    + These are 32 bits on 32 bit machines, and 64 bits on 64 bit machines 
+    #+BEGIN_SRC rust
+        let i: isize  = -1; 
+        let m: usize = 1; 
+    #+END_SRC
 *** Floating-Point Integers
 *** Arrays
 *** Slices
