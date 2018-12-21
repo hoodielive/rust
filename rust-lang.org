@@ -29,10 +29,10 @@
      #+END_SRC
     + There are also architecture sized types
     + These are 32 bits on 32 bit machines, and 64 bits on 64 bit machines 
-    #+BEGIN_SRC rust
-         let i: isize  = -1; 
-         let m: usize = 1; 
-    #+END_SRC
+      #+BEGIN_SRC rust
+          let i: isize  = -1; 
+          let m: usize = 1; 
+      #+END_SRC
 *** Floating-Point Integers
 *** Arrays
 *** Slices
