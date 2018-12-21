@@ -1,6 +1,6 @@
 #+TITLE: Rust Notes 
 
-* Data Types in Rust 
+** Data Types in Rust 
 *** Booleans
     + Booleans are true or false 
       #+BEGIN_SRC rust
@@ -11,6 +11,14 @@
          println!("y is {}", y); 
       #+END_SRC
 *** Characters
+    + Characters are not 8 bit unsigned integers like in C
+    + Rather, they are unicode scalars, meaning Rust fully support unicode out of the box
+      #+BEGIN_SRC rust
+          let c: char = "A"; 
+          let d: char = "♥"; 
+      #+END_SRC
+    
+    #+END_SRC
 *** Integers 
 *** Floating-Point Integers
 *** Arrays
