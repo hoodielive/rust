@@ -76,4 +76,37 @@
         }
     #+END_SRC
 *** Namespaces and Imports (use)  
+   For example: 
+   #+BEGIN_SRC rust
+        use std::collection::LinkedList; 
+        use std::colllection::Vector(); 
+    #+END_SRC
 
+** The Standard Library (Built-ins) 
+*** Types and their operations
+*** Memory management
+    + Rust provides both owned and referece-counted memory management, as well as more advanced methods. 
+    #+BEGIN_SRC rust
+    // Read and write; only used in one place. Similar to malloc in C (Box), allocating enough memory to store this string. 
+        let boxed = Box::new("data"); 
+        // Read-only for any number of users.
+        let ref_counted = Rc::new("data"); 
+    #+END_SRC
+*** Filesystem and I/O functions
+*** Basic networking
+    + Rust's standard library includes synchronous I/O only!
+    + It has support for both file-based I/O and Network I/O, along with user input from the console.
+*** Environment manipulation 
+    + The stdlib provides access to the environment, including environment variables, arguments, paths, temporary files and more.
+    + These are available on any supported operating system.
+      #+BEGIN_SRC rust
+          use std::env; 
+          let vars = env::vars(); 
+
+          // print all environment variables 
+          for (key, val) in vars {
+            println!("{}:{}", key, val); 
+          }
+      #+END_SRC
+*** Multiprocessing support
+*** Collections
