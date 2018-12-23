@@ -109,4 +109,20 @@
           }
       #+END_SRC
 *** Multiprocessing support
+    + Rust's stdlib only provides thread-based multiprocessing
+    + External libraries provide 'promise-based' async processing and "green thread" /M to N concurrency. 
 *** Collections
+**** Sequences (Vec(vector), LinkedList) 
+**** Queue (VecDeque)
+**** Maps (HashMap, BtreeMap)
+**** Sets (HashSet, BtreeSet)
+**** Heaps (BinaryHeap) 
+*** Rust's Standard Library Philosophy
+    + Rust's developers allow only the highest-quality APIs into the stdlib:
+    #+BEGIN_SRC rust
+        extern crate rand; 
+        extern crate tokio; 
+        extern crate chrono; 
+        extern crate serde; 
+        extern crate rocket; 
+    #+END_SRC
