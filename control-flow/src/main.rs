@@ -39,7 +39,38 @@ fn while_and_loop()
         if y == 1<<10 { break; }
     }
 }
+
+fn for_loop() 
+{
+    for x in 1..11
+    {
+        if x == 3 { continue;  }
+        if x == 8 { break; }
+        println!("x = {}", x); 
+    }
+    // range
+    for (pos,y) in (30..41).enumerate()
+    {
+        println!("{}: {}", pos, y); 
+    }
+}
+
+fn match_statement()
+{
+    let country_code = 7777;  // 1..999 
+    let country = match country_code
+    {
+        404 => "US", 
+        44 => "UK", 
+        1...999 => "unknown",
+        _ => "invalid"
+    }; 
+    println!("the country with code {} is {}", country_code, country); 
+}
+
 fn main() {
     if_statement();
     while_and_loop();
+    for_loop(); 
+    match_statement();
 }
