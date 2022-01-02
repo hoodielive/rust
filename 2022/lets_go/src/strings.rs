@@ -5,8 +5,7 @@ pub fn run()
     let mut _hello = String::from("Hello");
 
     // Debug.
-    println!("{}", _hello);
-    println!("{}", _hello.len());
+    println!("{}", _hello); println!("{}", _hello.len());
 
     // Push char.
     _hello.push('w');
@@ -27,10 +26,10 @@ pub fn run()
     println!("Is empty?: {}", _hello.is_empty());
 
     // Contains?
-    println!("Contains 'World': {}", _hello.contains("World"));
+    println!("Contains 'World': {}", _hello.contains("world"));
 
     // Replace.
-    println!("Replace : {}", _hello.replace("World", "There"));
+    println!("Replace : {}", _hello.replace("world", "There"));
 
     // Loop through string by whitespace.
     for word in _hello.split_whitespace()
@@ -42,9 +41,10 @@ pub fn run()
     let mut s = String::with_capacity(10);
     s.push('a');
     s.push('b');
+    s.push('c');
 
     // Assertion testing.
-    assert_eq!(2, s.len());
+    assert_eq!(3, s.len());
     assert_eq!(10, s.capacity());
 
     println!("{}", s)

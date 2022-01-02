@@ -13,8 +13,8 @@ pub fn run()
     // Reassign value.
     numbers[2] = 30;
 
-    // Get single value.
-    println!("Single value: {}", numbers[0]);
+    // Debug - verify that index 2 now contains 30.
+    println!("{:?}", numbers);
 
     // Get length.
     println!("Array length: {}", numbers.len());
