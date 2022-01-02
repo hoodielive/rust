@@ -1,0 +1,6 @@
+[package]
+name = "site-work"
+version = "0.1.0"
+authors = ["hoodielive <hoodielive@gmail.com>"]
+
+[dependencies]
