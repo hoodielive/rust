@@ -1,11 +1,11 @@
 pub fn run()
 {
-    let named_var = "Vincent";
+    let named_var = "obatala";
     println!("Give me some help baby: {}", named_var);
 
 
-    for x in named_var()
+    for x in named_var.split_whitespace()
     {
-        println!("I am Great!");
+        println!("{} am Great!", x);
     }
 }
